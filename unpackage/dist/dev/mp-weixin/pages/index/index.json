@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app全局首页",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {}
+}

@@ -1,0 +1,42 @@
+{
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "",
+  "appid": "wx3ffcef9fc255b0bc",
+  "projectname": "lzo-uinapp",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "swiper",
+          "query": "interval=4000&autoplay=false",
+          "id": 0,
+          "pathName": "pages/about/new_file"
+        },
+        {
+          "name": "test",
+          "id": 1,
+          "pathName": "pages/index/index"
+        }
+      ]
+    }
+  }
+}

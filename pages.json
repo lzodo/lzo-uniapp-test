@@ -1,0 +1,75 @@
+//pages.json
+{
+	"pages": [ //=========================pages数组中第一项表示应用启动页
+	
+		{
+			"path": "pages/index/index",
+			"style": { //设置页面独有外观样式，属性与全局一样
+			    "navigationBarTitleText": "uni-app全局首页",
+				"enablePullDownRefresh":true, //设置下拉刷新 uni.stopPullDownRefresh()手动关闭
+				"onReachBottomDistance":50, //设置距离底部多少触发上拉刷新函数
+				
+			    "h5":{
+					"titleNView":{
+						"titleText":"h5首页标题"
+					}
+			    }
+			}
+		},
+		{
+			"path": "pages/about/new_file",
+			"style": {
+		        "navigationBarTitleText": "uni-app全局关于页面",
+		        "h5":{
+					"titleNView":{
+						"titleText":"h5关于页面"
+					}
+		        }
+			}
+		},
+		{
+			"path": "pages/style/new_file"
+		}
+	],
+	
+	"globalStyle": { //===============================配置程序全局所有页面样式
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "enablePullDownRefresh":true //下拉刷新
+	},
+	
+	"tabBar": { // ===================================配置底部菜单
+	    "color": "#7A7E83",  //颜色
+	    "selectedColor": "#3cc51f",  //选中的颜色
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+		"position":"top", //仅微信小程序支持
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/logo.png", //图标路径
+	        "selectedIconPath": "static/logo.png", //选中的图标路径
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/about/new_file",
+	        "iconPath": "static/logo.png",
+	        "selectedIconPath": "static/logo.png",
+	        "text": "关于"
+	    }]
+	},
+	
+	"condition": { //=== 模式配置，仅开发期间生效，开发的时候直接切换开发者工具编译模式到某个页面进行开发
+	    "current": 0, //当前激活的模式（list 的索引项）
+	    "list": [{
+	            "name": "swiper", //模式名称
+	            "path": "pages/about/new_file", //启动页面，必选
+	            "query": "interval=4000&autoplay=false" //启动参数，在页面的onLoad函数里面得到。
+	        },
+	        {
+	            "name": "test",
+	            "path": "pages/index/index"
+	        }
+	    ]
+	}
+}
