@@ -10,7 +10,7 @@
 
 <style lang="scss">
 	.box{
-		width: 3 5rpx;
+		width: 35rpx;
 		height: 750rpx;
 		background: #007AFF;
 		.c{}

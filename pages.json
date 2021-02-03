@@ -48,13 +48,13 @@
 		"position":"top", //仅微信小程序支持
 	    "list": [{
 	        "pagePath": "pages/index/index",
-	        "iconPath": "static/logo.png", //图标路径
-	        "selectedIconPath": "static/logo.png", //选中的图标路径
+	        "iconPath": "@https://lzo-gitee.gitee.io/gitee-static/images/home.png", //图标路径
+	        "selectedIconPath": "@https://lzo-gitee.gitee.io/gitee-static/images/home-active.png", //选中的图标路径
 	        "text": "首页"
 	    }, {
 	        "pagePath": "pages/about/new_file",
-	        "iconPath": "static/logo.png",
-	        "selectedIconPath": "static/logo.png",
+	        "iconPath": "https://lzo-gitee.gitee.io/gitee-static/images/about.png",
+	        "selectedIconPath": "https://lzo-gitee.gitee.io/gitee-static/images/about-active.png",
 	        "text": "关于"
 	    }]
 	},
