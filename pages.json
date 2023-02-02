@@ -45,7 +45,7 @@
 	    "selectedColor": "#3cc51f",  //选中的颜色
 	    "borderStyle": "black",
 	    "backgroundColor": "#ffffff",
-		"position":"top", //仅微信小程序支持
+		//"position":"top", //仅微信小程序支持
 	    "list": [{
 	        "pagePath": "pages/index/index",
 	        "iconPath": "@https://lzo-gitee.gitee.io/gitee-static/images/home.png", //图标路径
